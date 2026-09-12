@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import ArticlePage from "./Pages/real-page/ArticlePage";
 import NewsDetail from "./Pages/news-detail/newsDetail";

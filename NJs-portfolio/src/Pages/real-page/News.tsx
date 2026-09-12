@@ -6,18 +6,18 @@ export default function News() {
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-sm-12">
-            //SECTION TITLE
+            {/* SECTION TITLE */}
             <div className="section-title wow fadeInUp" data-wow-delay="0.1s">
               <h2>Latest News</h2>
             </div>
           </div>
 
           <div className="col-md-4 col-sm-6">
-            // NEWS THUMB
+            {/* NEWS THUMB */}
             <div className="news-thumb wow fadeInUp" data-wow-delay="0.4s">
               <Link to="/news-detail">
                 <img
-                  src="images/news-image1.jpg"
+                  src="/images/news-image1.jpg"
                   className="img-responsive"
                   alt=""
                 />
@@ -47,11 +47,11 @@ export default function News() {
           </div>
 
           <div className="col-md-4 col-sm-6">
-            // NEWS THUMB
+            {/* NEWS THUMB */}
             <div className="news-thumb wow fadeInUp" data-wow-delay="0.6s">
               <Link to="/news-detail">
                 <img
-                  src="images/news-image2.jpg"
+                  src="/images/news-image2.jpg"
                   className="img-responsive"
                   alt=""
                 />
@@ -87,7 +87,7 @@ export default function News() {
             <div className="news-thumb wow fadeInUp" data-wow-delay="0.8s">
               <Link to="/news-detail">
                 <img
-                  src="images/news-image3.jpg"
+                  src="/images/news-image3.jpg"
                   className="img-responsive"
                   alt=""
                 />

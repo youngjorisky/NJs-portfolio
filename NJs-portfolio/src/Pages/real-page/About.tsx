@@ -24,7 +24,7 @@ export default function About() {
               </div>
               <figure className="profile wow fadeInUp" data-wow-delay="1s">
                 <img
-                  src="images/author-image.jpg"
+                  src="/images/author-image.jpg"
                   className="img-responsive"
                   alt=""
                 />

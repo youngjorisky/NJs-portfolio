@@ -5,16 +5,16 @@ export default function Appointment() {
         <div className="row">
           <div className="col-md-6 col-sm-6">
             <img
-              src="images/appointment-image.jpg"
+              src="/images/appointment-image.jpg"
               className="img-responsive"
               alt=""
             />
           </div>
 
           <div className="col-md-6 col-sm-6">
-            // CONTACT FORM HERE
+            {/* CONTACT FORM HERE */}
             <form id="appointment-form" role="form" method="post" action="#">
-              // SECTION TITLE
+              {/* SECTION TITLE */}
               <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
               </div>
