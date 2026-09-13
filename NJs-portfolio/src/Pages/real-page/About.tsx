@@ -6,7 +6,8 @@ export default function About() {
           <div className="col-md-6 col-sm-6">
             <div className="about-info">
               <h2 className="wow fadeInUp" data-wow-delay="0.6s">
-                Welcome to My <i className="fa-solid fa-p">Professional Space</i>
+                Welcome to My{" "}
+                <i className="fa-solid fa-p">Professional Space</i>
               </h2>
               <div className="wow fadeInUp about-message" data-wow-delay="0.8s">
                 <p>
@@ -18,8 +19,8 @@ export default function About() {
                 </p>
                 <p>
                   I provide research support and academic services tailored to
-                  the needs of students, researchers, and organizations
-                  working across health, nutrition, and public health.
+                  the needs of students, researchers, and organizations working
+                  across health, nutrition, and public health.
                 </p>
               </div>
               <figure className="profile wow fadeInUp" data-wow-delay="1s">

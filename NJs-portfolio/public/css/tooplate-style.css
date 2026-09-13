@@ -1116,6 +1116,8 @@ footer a:hover {
 
 .latest-stories {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .stories-image,
@@ -1126,8 +1128,8 @@ footer a:hover {
 
 .stories-image img {
   border-radius: 100%;
-  width: 65px;
-  height: 65px;
+  width: 105px;
+  height: 105px;
 }
 
 .stories-info {
@@ -1141,6 +1143,32 @@ footer a:hover {
 .stories-info span {
   color: #858585;
   font-size: 12px;
+}
+
+@media only screen and (min-width: 766px) {
+  .latest-stories {
+    display: flex;
+    align-items: center;
+  }
+
+  .stories-image {
+    width: 105px;
+    height: 105px;
+    flex: 0 0 105px;
+  }
+
+  .stories-image img {
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .stories-info {
+    flex: 1;
+    min-width: 0;
+    margin-left: 15px;
+  }
 }
 
 .opening-hours p {

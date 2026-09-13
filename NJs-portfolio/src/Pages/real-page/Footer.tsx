@@ -9,9 +9,9 @@ export default function Footer() {
                 Contact Info
               </h4>
               <p>
-                Have questions about research and nutrition support? I would
-                be happy to discuss your project needs and the best way to
-                support your academic or professional research goals.
+                Have questions about research and nutrition support? I would be
+                happy to discuss your project needs and the best way to support
+                your academic or professional research goals.
               </p>
 
               <div className="contact-info">
@@ -33,27 +33,10 @@ export default function Footer() {
               <h4 className="wow fadeInUp" data-wow-delay="0.4s">
                 Research Publications
               </h4>
-              <div className="latest-stories">
-                <div className="stories-image">
-                  <a href="#">
-                    <img
-                      src="/images/news-image.jpg"
-                      className="img-responsive"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="stories-info">
-                  <a href="#">
-                    <h5>Postpartum Weight Management Experiences</h5>
-                  </a>
-                  <span>2025</span>
-                </div>
-              </div>
 
               <div className="latest-stories">
                 <div className="stories-image">
-                  <a href="#">
+                  <a href="https://doi.org/10.1016/j.jneb.2025.03.008">
                     <img
                       src="/images/news-image.jpg"
                       className="img-responsive"
@@ -62,10 +45,15 @@ export default function Footer() {
                   </a>
                 </div>
                 <div className="stories-info">
-                  <a href="#">
-                    <h5>Nutrition and Public Health Research</h5>
+                  <a href="https://doi.org/10.1016/j.jneb.2025.03.008">
+                    <h5>
+                      Postpartum Weight Management Experiences of Ghanaian
+                      Women: A Qualitative Inquiry
+                    </h5>
                   </a>
-                  <span>Research Support</span>
+                  <span>
+                    Journal of Nutrition Education and Behavior, 57(8), 716–723
+                  </span>
                 </div>
               </div>
             </div>
