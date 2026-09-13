@@ -16,7 +16,7 @@ export default function Menu() {
             <span className="icon icon-bar"></span>
           </button>
 
-          <a href="index.html" className="navbar-brand">
+          <a href="/" className="navbar-brand">
             <i className="fa fa-stethoscope"></i>
             <span className="brand-n">N</span>ana Adjoa Sarkwa
           </a>

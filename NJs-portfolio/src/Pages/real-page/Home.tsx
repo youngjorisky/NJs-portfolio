@@ -1,9 +1,35 @@
+import { useEffect, useRef } from "react";
+
 export default function Home() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const $ = window.jQuery;
+
+    if (!$ || !carouselRef.current) {
+      return undefined;
+    }
+
+    const $carousel = $(carouselRef.current);
+
+    $carousel.owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      autoplay: true,
+      animateOut: "fadeOut",
+    });
+
+    return () => {
+      $carousel.trigger("destroy.owl.carousel");
+    };
+  }, []);
+
   return (
     <section id="home" className="slider" data-stellar-background-ratio="0.5">
       <div className="container">
         <div className="row">
-          <div className="owl-carousel owl-theme">
+          <div className="owl-carousel owl-theme" ref={carouselRef}>
             <div className="item item-first">
               <div className="caption">
                 <div className="col-md-offset-1 col-md-10">

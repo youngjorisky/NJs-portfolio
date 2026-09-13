@@ -6,7 +6,26 @@ http://www.tooplate.com/view/2098-health
 
 */
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
 
 body {
   background: #eef6ee;
@@ -95,7 +114,7 @@ html {
 }
 
 a {
-  color: #252525;
+  color: #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
@@ -347,6 +366,13 @@ header span i {
   padding: 10px;
 }
 
+.navbar.navbar-default.navbar-static-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+}
+
 .navbar-default .navbar {
   min-height: 80px;
 }
@@ -354,16 +380,22 @@ header span i {
 .navbar-default .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
   min-height: 74px;
+  font-size: 30px;
+}
+
+.navbar-header {
+  color: #000000;
 }
 
 .navbar-default .navbar-brand {
-  color: #393939;
+  color: #000000;
   font-weight: 500;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .navbar-default .navbar-brand .fa-stethoscope {
@@ -377,11 +409,6 @@ header span i {
   color: #a5c422;
   font-size: 30px;
   font-weight: 700;
-}
-
-.navbar-brand {
-  font-size: 30px;
-  font-weight: 600;
 }
 
 .navbar-default .navbar-nav li.appointment-btn {
@@ -403,7 +430,7 @@ header span i {
 }
 
 .navbar-default .navbar-nav li a {
-  color: #555555;
+  color: #000000;
   font-size: 12px;
   font-weight: 500;
   padding-right: 20px;
@@ -442,6 +469,11 @@ header span i {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: transparent;
+}
+
+.navbar-header {
+  font-size: 60px;
+  font-weight: 600;
 }
 
 /*---------------------------------------
@@ -575,6 +607,10 @@ header span i {
 
 .about-message {
   margin-bottom: 20px;
+}
+
+.about-info h2 {
+  font-size: 50px;
 }
 
 /*---------------------------------------
@@ -744,14 +780,81 @@ header span i {
 
 #appointment {
   background: linear-gradient(180deg, #eef7ee 0%, #ffffff 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#appointment .container {
+  max-width: 1200px;
 }
 
 #appointment #appointment-form {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 22px 26px;
-  border-radius: 10px;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(160, 196, 150, 0.35);
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(160, 196, 150, 0.3);
+}
+
+#appointment #appointment-form .section-title {
+  padding-bottom: 18px;
+}
+
+#appointment #appointment-form .section-title h2 {
+  color: #333333;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+#appointment #appointment-form .wow.fadeInUp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 16px 24px;
+}
+
+#appointment #appointment-form .col-md-6,
+#appointment #appointment-form .col-md-12 {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#appointment #appointment-form .col-md-12 {
+  grid-column: 1 / -1;
+}
+
+#appointment label {
+  display: block;
+  color: #454545;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0 8px;
+  text-align: left;
+}
+
+#appointment .form-control {
+  background: #f6f6f6;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: normal;
+  min-height: 48px;
+  width: 100%;
+  transition: all ease-in-out 0.4s;
+}
+
+#appointment input,
+#appointment select {
+  height: 50px;
+}
+
+#appointment textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
 }
 
 #appointment #cf-submit {
@@ -761,21 +864,19 @@ header span i {
   font-weight: 700;
   letter-spacing: 0.2px;
   transition: all 280ms ease;
+  min-height: 57px;
+  border: none;
+  cursor: pointer;
 }
 
 #appointment #cf-submit:hover {
   background: #4267b2;
+  color: #ffffff;
 }
 
-#appointment .form-control {
-  border: 1px solid #dce6d8;
-}
-
-#appointment #appointment-form {
-  background: rgba(255, 255, 255, 0.82);
-  padding: 20px 26px;
-  border-radius: 10px;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+#appointment #appointment-form .col-md-12 button {
+  width: 100%;
+  margin-top: 14px;
 }
 
 #google-map iframe {
@@ -1069,7 +1170,8 @@ footer a:hover {
 .angle-up-btn {
   position: relative;
   bottom: 4em;
-  display: block;
+  right: auto;
+  left: auto;
 }
 
 .angle-up-btn a {
@@ -1077,7 +1179,7 @@ footer a:hover {
   border: 1px solid #f2f2f2;
   border-radius: 3px;
   font-size: 20px;
-  color: #393939;
+  color: #2b2a2a;
   display: inline-block;
   text-align: center;
   width: 40px;

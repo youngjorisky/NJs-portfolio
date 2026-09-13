@@ -9,10 +9,9 @@ export default function Footer() {
                 Contact Info
               </h4>
               <p>
-                Have questions about our services or need help with your health
-                and nutrition? Our team is here to assist you. Feel free to
-                reach out to us for more information or to schedule an
-                appointment.
+                Have questions about research and nutrition support? I would
+                be happy to discuss your project needs and the best way to
+                support your academic or professional research goals.
               </p>
 
               <div className="contact-info">
@@ -21,8 +20,8 @@ export default function Footer() {
                 </p>
                 <p>
                   <i className="fa fa-envelope-o"></i>
-                  <a href="mailto:sarkwananaadjoa@gmail.com">
-                    sarkwananaadjoa@gmail.com
+                  <a href="mailto:nanaadjoasarkwa@gmail.com">
+                    nanaadjoasarkwa@gmail.com
                   </a>
                 </p>
               </div>
@@ -32,13 +31,13 @@ export default function Footer() {
           <div className="col-md-4 col-sm-4">
             <div className="footer-thumb">
               <h4 className="wow fadeInUp" data-wow-delay="0.4s">
-                Latest News
+                Research Publications
               </h4>
               <div className="latest-stories">
                 <div className="stories-image">
                   <a href="#">
                     <img
-                      src="images/news-image.jpg"
+                      src="/images/news-image.jpg"
                       className="img-responsive"
                       alt=""
                     />
@@ -46,9 +45,9 @@ export default function Footer() {
                 </div>
                 <div className="stories-info">
                   <a href="#">
-                    <h5>Amazing Technology</h5>
+                    <h5>Postpartum Weight Management Experiences</h5>
                   </a>
-                  <span>March 08, 2018</span>
+                  <span>2025</span>
                 </div>
               </div>
 
@@ -64,9 +63,9 @@ export default function Footer() {
                 </div>
                 <div className="stories-info">
                   <a href="#">
-                    <h5>New Healing Process</h5>
+                    <h5>Nutrition and Public Health Research</h5>
                   </a>
-                  <span>February 20, 2018</span>
+                  <span>Research Support</span>
                 </div>
               </div>
             </div>
@@ -116,20 +115,6 @@ export default function Footer() {
           </div>
 
           <div className="col-md-12 col-sm-12 border-top">
-            <div className="col-md-4 col-sm-6">
-              <div className="copyright-text">
-                <p>
-                  Copyright &copy; 2018 Your Company | Design:
-                  <a
-                    rel="nofollow"
-                    href="https://www.facebook.com/tooplate"
-                    target="_parent"
-                  >
-                    Tooplate
-                  </a>
-                </p>
-              </div>
-            </div>
             <div className="col-md-6 col-sm-6">
               <div className="footer-link">
                 <a href="#">Laboratory Tests</a>

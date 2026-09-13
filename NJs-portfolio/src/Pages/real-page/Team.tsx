@@ -6,7 +6,7 @@ export default function Team() {
           <div className="col-md-6 col-sm-6">
             <div className="about-info">
               <h2 className="wow fadeInUp" data-wow-delay="0.1s">
-                What I am
+                Areas of Specialization
               </h2>
             </div>
           </div>
@@ -22,7 +22,7 @@ export default function Team() {
               />
 
               <div className="team-info">
-                <h3>A registered Dietitian</h3>
+                <h3>Public Health Nutrition</h3>
                 <p>Nutrition and Public Health</p>
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function Team() {
               />
 
               <div className="team-info">
-                <h3>A research specialist</h3>
+                <h3>Research & Academic Support</h3>
                 <p>Research and Health Data</p>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Team() {
               />
 
               <div className="team-info">
-                <h3>Community Health Specialist</h3>
+                <h3>Community Health</h3>
                 <p>Community Health</p>
               </div>
             </div>
