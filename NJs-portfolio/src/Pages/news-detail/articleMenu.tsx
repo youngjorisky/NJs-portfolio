@@ -17,8 +17,8 @@ export default function ArticleMenu() {
           </button>
 
           {/* <!-- lOGO TEXT HERE --> */}
-          <a href="index.html" className="navbar-brand">
-            <i className="fa fa-h-square"></i>ealth Center
+          <a href="/" className="navbar-brand">
+            <span className="brand-n">N</span>ana Adjoa Sarkwa
           </a>
         </div>
 
