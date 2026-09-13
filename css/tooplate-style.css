@@ -6,7 +6,26 @@ http://www.tooplate.com/view/2098-health
 
 */
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
 
 body {
   background: #ffffff;
@@ -323,7 +342,7 @@ header span i {
 }
 
 .navbar-default .navbar-brand {
-  color: #393939;
+  color: #000000;
   font-weight: 500;
   padding: 0;
   margin-top: 0;
