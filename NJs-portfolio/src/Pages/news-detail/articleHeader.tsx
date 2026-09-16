@@ -4,7 +4,7 @@ export default function ArticleHeader() {
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-3">
-            <p>Welcome to my Professional Dietary Health Care</p>
+            <p>Welcome to Nana Adjoa Sarkwa Nutrition Research</p>
           </div>
 
           <div className="col-md-8 col-sm-9 text-align-right">
@@ -17,7 +17,9 @@ export default function ArticleHeader() {
             </span>
             <span className="email-icon">
               <i className="fa fa-envelope-o"></i>
-              <a href="#">info@company.com</a>
+              <a href="mailto:nanaadjoasarkwa@gmail.com">
+                nanaadjoasarkwa@gmail.com
+              </a>
             </span>
           </div>
         </div>

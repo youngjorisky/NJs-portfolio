@@ -9,8 +9,9 @@ export default function ArticleFooter() {
                 Contact Info
               </h4>
               <p>
-                Fusce at libero iaculis, venenatis augue quis, pharetra lorem.
-                Curabitur ut dolor eu elit consequat ultricies.
+                Have questions about research and nutrition support? I would be
+                happy to discuss your project needs and the best way to support
+                your academic or professional research goals.
               </p>
 
               <div className="contact-info">
@@ -19,7 +20,9 @@ export default function ArticleFooter() {
                 </p>
                 <p>
                   <i className="fa fa-envelope-o"></i>
-                  <a href="#">info@company.com</a>
+                  <a href="mailto:nanaadjoasarkwa@gmail.com">
+                    nanaadjoasarkwa@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -28,13 +31,13 @@ export default function ArticleFooter() {
           <div className="col-md-4 col-sm-4">
             <div className="footer-thumb">
               <h4 className="wow fadeInUp" data-wow-delay="0.4s">
-                Latest News
+                Research Publications
               </h4>
               <div className="latest-stories">
                 <div className="stories-image">
                   <a href="#">
                     <img
-                      src="images/news-image.jpg"
+                      src="/images/news-image.jpg"
                       className="img-responsive"
                       alt=""
                     />
@@ -42,9 +45,9 @@ export default function ArticleFooter() {
                 </div>
                 <div className="stories-info">
                   <a href="#">
-                    <h5>Amazing Technology</h5>
+                    <h5>Postpartum Weight Management Experiences</h5>
                   </a>
-                  <span>March 08, 2018</span>
+                  <span>2025</span>
                 </div>
               </div>
 
@@ -52,7 +55,7 @@ export default function ArticleFooter() {
                 <div className="stories-image">
                   <a href="#">
                     <img
-                      src="images/news-image.jpg"
+                      src="/images/news-image.jpg"
                       className="img-responsive"
                       alt=""
                     />
@@ -60,9 +63,9 @@ export default function ArticleFooter() {
                 </div>
                 <div className="stories-info">
                   <a href="#">
-                    <h5>New Healing Process</h5>
+                    <h5>Nutrition and Public Health Research</h5>
                   </a>
-                  <span>February 20, 2018</span>
+                  <span>Research Support</span>
                 </div>
               </div>
             </div>
@@ -88,23 +91,23 @@ export default function ArticleFooter() {
               <ul className="social-icon">
                 <li>
                   <a
-                    href="#"
+                    href="https://web.facebook.com/NanaAdjoaSarkwa"
                     className="fa fa-facebook-square"
                     title="facebook icon"
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="fa fa-twitter"
-                    title="twitter icon"
+                    href="https://www.instagram.com/nanaadjoasarkwa?stkn=MW5rYnQ3Y2sxa21qbg=="
+                    className="fa fa-instagram"
+                    title="instagram icon"
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="fa fa-instagram"
-                    title="instagram icon"
+                    href="https://www.linkedin.com/in/nana-adjoa-sarkwa/"
+                    className="fa fa-linkedin"
+                    title="linkedin icon"
                   ></a>
                 </li>
               </ul>
@@ -115,7 +118,7 @@ export default function ArticleFooter() {
             <div className="col-md-4 col-sm-6">
               <div className="copyright-text">
                 <p>
-                  Copyright &copy; 2018 Your Company | Design:
+                  Copyright &copy; 2026 Nana Adjoa Sarkwa | Design:
                   <a
                     rel="nofollow"
                     href="https://www.facebook.com/tooplate"
@@ -128,10 +131,10 @@ export default function ArticleFooter() {
             </div>
             <div className="col-md-6 col-sm-6">
               <div className="footer-link">
-                <a href="#">Laboratory Tests</a>
-                <a href="#">Departments</a>
-                <a href="#">Insurance Policy</a>
-                <a href="#">Careers</a>
+                <a href="#">Nutrition Research</a>
+                <a href="#">Dietary Support</a>
+                <a href="#">Food Systems</a>
+                <a href="#">Public Health</a>
               </div>
             </div>
             <div className="col-md-2 col-sm-2 text-align-center">

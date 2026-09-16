@@ -18,6 +18,7 @@ export default function ArticleMenu() {
 
           {/* <!-- lOGO TEXT HERE --> */}
           <a href="/" className="navbar-brand">
+            <i className="fa fa-stethoscope"></i>
             <span className="brand-n">N</span>ana Adjoa Sarkwa
           </a>
         </div>
@@ -26,32 +27,32 @@ export default function ArticleMenu() {
         <div className="collapse navbar-collapse">
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="index.html#top" className="smoothScroll">
+              <a href="/#top" className="smoothScroll">
                 Home
               </a>
             </li>
             <li>
-              <a href="index.html#about" className="smoothScroll">
-                About Us
+              <a href="/#about" className="smoothScroll">
+                About
               </a>
             </li>
             <li>
-              <a href="index.html#team" className="smoothScroll">
-                Our Staff
+              <a href="/#team" className="smoothScroll">
+                Skills
               </a>
             </li>
             <li>
-              <a href="index.html#news" className="smoothScroll">
+              <a href="/#news" className="smoothScroll">
                 News
               </a>
             </li>
             <li>
-              <a href="index.html#google-map" className="smoothScroll">
+              <a href="/#google-map" className="smoothScroll">
                 Contact
               </a>
             </li>
             <li className="appointment-btn">
-              <a href="index.html#appointment">Make an appointment</a>
+              <a href="/#appointment">Make an appointment</a>
             </li>
           </ul>
         </div>

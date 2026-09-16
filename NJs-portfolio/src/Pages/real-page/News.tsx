@@ -23,23 +23,23 @@ export default function News() {
                 />
               </Link>
               <div className="news-info">
-                <span>March 08, 2018</span>
+                <span>September 2026</span>
                 <h3>
-                  <Link to="/news-detail">About Amazing Technology</Link>
+                  <Link to="/news-detail">Whole Food, Better Health</Link>
                 </h3>
                 <p>
-                  Maecenas risus neque, placerat volutpat tempor ut, vehicula et
-                  felis.
+                  Food systems are moving toward plant-rich, minimally processed
+                  meals that improve prevention and wellbeing.
                 </p>
                 <div className="author">
                   <img
-                    src="images/author-image.jpg"
+                    src="/images/author-image.jpg"
                     className="img-responsive"
                     alt=""
                   />
                   <div className="author-info">
-                    <h5>Jeremie Carlson</h5>
-                    <p>CEO / Founder</p>
+                    <h5>Nana Adjoa Sarkwa</h5>
+                    <p>Nutrition Research</p>
                   </div>
                 </div>
               </div>
@@ -57,25 +57,23 @@ export default function News() {
                 />
               </Link>
               <div className="news-info">
-                <span>February 20, 2018</span>
+                <span>September 2026</span>
                 <h3>
-                  <Link to="/news-detail">
-                    Introducing a new healing process
-                  </Link>
+                  <Link to="/news-detail">Personalized Nutrition Grows</Link>
                 </h3>
                 <p>
-                  Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam
-                  et est ligula.
+                  Nutrition advice is shifting toward personal, culturally
+                  relevant choices that fit real daily routines.
                 </p>
                 <div className="author">
                   <img
-                    src="images/author-image.jpg"
+                    src="/images/author-image.jpg"
                     className="img-responsive"
                     alt=""
                   />
                   <div className="author-info">
-                    <h5>Jason Stewart</h5>
-                    <p>General Director</p>
+                    <h5>Nana Adjoa Sarkwa</h5>
+                    <p>Public Health Nutrition</p>
                   </div>
                 </div>
               </div>
@@ -93,23 +91,23 @@ export default function News() {
                 />
               </Link>
               <div className="news-info">
-                <span>January 27, 2018</span>
+                <span>September 2026</span>
                 <h3>
-                  <Link to="/news-detail">Review Annual Medical Research</Link>
+                  <Link to="/news-detail">Climate-Friendly Food Choices</Link>
                 </h3>
                 <p>
-                  Vivamus non nulla semper diam cursus maximus. Pellentesque
-                  dignissim.
+                  Local food systems and sustainable meal choices are becoming
+                  central to healthier eating conversations.
                 </p>
                 <div className="author">
                   <img
-                    src="images/author-image.jpg"
+                    src="/images/author-image.jpg"
                     className="img-responsive"
                     alt=""
                   />
                   <div className="author-info">
-                    <h5>Andrio Abero</h5>
-                    <p>Online Advertising</p>
+                    <h5>Nana Adjoa Sarkwa</h5>
+                    <p>Food & Nutrition</p>
                   </div>
                 </div>
               </div>
