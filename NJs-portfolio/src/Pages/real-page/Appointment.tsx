@@ -6,12 +6,12 @@ export default function Appointment() {
           <div className="appointment-imgs col-md-6 col-sm-6">
             <img
               src="/images/appointment-image-1.jpeg"
-              className="img-responsive"
+              className="img-responsive appointment-img-1"
               alt="appointment-img-1"
             />
             <img
               src="/images/appointment-image-2.jpeg"
-              className="img-responsive"
+              className="img-responsive appointment-img-2"
               alt="appointment-img-2"
             />
           </div>

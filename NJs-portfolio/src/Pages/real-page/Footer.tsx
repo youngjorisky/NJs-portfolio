@@ -38,7 +38,7 @@ export default function Footer() {
                 <div className="stories-image">
                   <a href="https://doi.org/10.1016/j.jneb.2025.03.008">
                     <img
-                      src="/images/news-image.jpg"
+                      src="/images/postpatrum-image.jpeg"
                       className="img-responsive"
                       alt=""
                     />
