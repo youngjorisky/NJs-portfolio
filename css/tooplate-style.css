@@ -800,6 +800,15 @@ header span i {
   font-weight: 500;
 }
 
+.appointment-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.appointment-imgs img {
+  border-radius: 20px;
+}
+
 #appointment .form-control {
   background: #f9f9f9;
   border: none;
