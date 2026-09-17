@@ -28,6 +28,14 @@ http://www.tooplate.com/view/2098-health
   src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 200 800;
+  src: url("../fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+}
+
 body {
   background: #eef6ee;
   font-family: "Poppins", sans-serif;
@@ -290,7 +298,7 @@ a:focus {
   animation: spinner 0.9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+@-webkit-keyframes spinner {
   to {
     transform: rotate(360deg);
   }
@@ -546,6 +554,7 @@ header span i {
   background: transparent;
   display: block;
   -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
@@ -592,38 +601,143 @@ header span i {
   -----------------------------------------*/
 
 #about {
-  background: url("/images/personal-image.png") no-repeat top center;
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  background: #f3f7f2;
+  padding: 110px 0;
 }
 
-.profile img,
-.profile figcaption {
-  display: inline-block;
-  margin-top: 0;
+#about .container {
+  text-align: center;
 }
+
+.about-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-info .left-section {
+  max-width: 60%;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.about-info .left-section h2 {
+  color: #054f1e;
+  font-size: clamp(24px, 4vw, 42px);
+  margin: 0 0 28px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  background: #dce7d1;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+}
+
 .profile img {
-  border-radius: 100%;
-  width: 65px;
-  height: 65px;
-  margin-right: 1em;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* circular portrait */
+  object-fit: cover;
+  border: 6px solid #193416; /* accent color */
 }
+
+.profile figcaption {
+  flex: 1;
+}
+
 .profile figcaption h3 {
-  margin-top: 0;
-}
-
-#about h6 {
-  color: #858585;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a1a;
   margin: 0;
+  border-left: 3px solid #2c7a7b;
+  padding-left: 10px;
 }
 
-.about-message p {
-  color: black;
+.about-message h3 {
+  color: #28472f;
+  line-height: 1.5;
+  margin: 0 auto 18px;
+  max-width: 80%;
+  position: relative;
+}
+
+.about-message i {
+  font-size: 30px;
+  color: #054f1e;
+}
+
+.about-message .leaf {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.about-message .comment {
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+}
+
+.profile {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about-info h2 {
-  font-size: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.typing-heading {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  border-right: 3px solid #789b2f;
+  animation:
+    about-typing 3.6s steps(33, end) forwards,
+    about-caret 0.75s step-end infinite;
+}
+
+@keyframes about-typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 34ch;
+  }
+}
+
+@keyframes about-caret {
+  0%,
+  100% {
+    border-color: #789b2f;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .typing-heading {
+    white-space: normal;
+    max-width: 100%;
+    border-right: 0;
+    animation: none;
+  }
 }
 
 /*---------------------------------------
@@ -1053,7 +1167,6 @@ footer {
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
-  float: left;
   min-width: 30px;
   padding: 6px 12px;
   -webkit-transition: all ease-in-out 0.4s;
