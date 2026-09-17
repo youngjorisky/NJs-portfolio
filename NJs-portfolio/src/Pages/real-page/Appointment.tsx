@@ -3,11 +3,16 @@ export default function Appointment() {
     <section id="appointment" data-stellar-background-ratio="3">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 col-sm-6">
+          <div className="appointment-imgs col-md-6 col-sm-6">
             <img
-              src="/images/appointment-image.jpg"
+              src="/images/appointment-image-1.jpeg"
               className="img-responsive"
-              alt=""
+              alt="appointment-img-1"
+            />
+            <img
+              src="/images/appointment-image-2.jpeg"
+              className="img-responsive"
+              alt="appointment-img-2"
             />
           </div>
 

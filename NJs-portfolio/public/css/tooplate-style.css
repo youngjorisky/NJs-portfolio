@@ -883,6 +883,15 @@ header span i {
   margin-top: 14px;
 }
 
+.appointment-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.appointment-imgs img {
+  border-radius: 20px;
+}
+
 #google-map iframe {
   display: block;
   min-height: 450px;
