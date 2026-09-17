@@ -24,7 +24,7 @@ export default function About() {
                   </h3>
                   <i className="fa-solid fa-tablets"></i>
                   <i className=" leaf fa-solid fa-leaf"></i>
-                  <i className="comment fa-solid fa-comment-medical"></i>
+                  <i className="comment fa-solid fa-pills"></i>
                   <h3>
                     I provide research support and academic services tailored to
                     the needs of students, researchers, and organizations
