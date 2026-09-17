@@ -16,7 +16,7 @@ export default function Team() {
           <div className="col-md-4 col-sm-6">
             <div className="team-thumb wow fadeInUp" data-wow-delay="0.2s">
               <img
-                src="/images/author-image.jpg"
+                src="/images/public-health-picture.jpeg"
                 className="img-responsive"
                 alt=""
               />
@@ -31,7 +31,7 @@ export default function Team() {
           <div className="col-md-4 col-sm-6">
             <div className="team-thumb wow fadeInUp" data-wow-delay="0.4s">
               <img
-                src="/images/author-image.jpg"
+                src="/images/research-picture.jpeg"
                 className="img-responsive"
                 alt=""
               />
@@ -46,7 +46,7 @@ export default function Team() {
           <div className="col-md-4 col-sm-6">
             <div className="team-thumb wow fadeInUp" data-wow-delay="0.6s">
               <img
-                src="/images/author-image.jpg"
+                src="/images/community-service-picture.jpeg"
                 className="img-responsive"
                 alt=""
               />

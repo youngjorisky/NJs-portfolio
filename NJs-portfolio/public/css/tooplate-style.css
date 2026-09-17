@@ -625,6 +625,10 @@ header span i {
   cursor: pointer;
 }
 
+.team-thumb img {
+  border-radius: 20px;
+}
+
 .team-info {
   padding: 20px 30px 0 30px;
 }

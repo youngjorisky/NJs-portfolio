@@ -33,7 +33,7 @@ export default function News() {
                 </p>
                 <div className="author">
                   <img
-                    src="/images/author-image.jpg"
+                    src="/images/profile-image.png"
                     className="img-responsive"
                     alt=""
                   />
@@ -67,7 +67,7 @@ export default function News() {
                 </p>
                 <div className="author">
                   <img
-                    src="/images/author-image.jpg"
+                    src="/images/profile-image.png"
                     className="img-responsive"
                     alt=""
                   />
@@ -101,7 +101,7 @@ export default function News() {
                 </p>
                 <div className="author">
                   <img
-                    src="/images/author-image.jpg"
+                    src="/images/profile-image.png"
                     className="img-responsive"
                     alt=""
                   />
