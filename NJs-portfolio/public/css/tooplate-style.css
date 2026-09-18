@@ -448,10 +448,12 @@ header span i {
 
 .appointment-img-1 {
   transform: rotate(15deg);
+  filter: grayscale(100%);
 }
 
 .appointment-img-2 {
   transform: rotate(-15deg);
+  filter: grayscale(100%);
 }
 
 .img-responsive {

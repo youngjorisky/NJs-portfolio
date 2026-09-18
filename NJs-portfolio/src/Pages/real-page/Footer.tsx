@@ -80,21 +80,21 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://web.facebook.com/NanaAdjoaSarkwa"
-                    className="fa fa-facebook-square"
+                    className="fa-brands fa-facebook-square"
                     title="facebook icon"
                   ></a>
                 </li>
                 <li>
                   <a
                     href="https://www.instagram.com/nanaadjoasarkwa?stkn=MW5rYnQ3Y2sxa21qbg=="
-                    className="fa fa-instagram"
+                    className="fa-brands fa-instagram"
                     title="instagram icon"
                   ></a>
                 </li>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/nana-adjoa-sarkwa/"
-                    className="fa fa-linkedin"
+                    className="fa-brands fa-linkedin"
                     title="linkedin icon"
                   ></a>
                 </li>
