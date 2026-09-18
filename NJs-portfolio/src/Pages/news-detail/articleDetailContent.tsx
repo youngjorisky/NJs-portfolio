@@ -177,7 +177,7 @@ export default function ArticleDetailContent() {
                   rel="noreferrer"
                   className="btn btn-primary"
                 >
-                  <i className="fa fa-facebook"></i>Facebook
+                  <i className="fa-brands fa-facebook"></i>Facebook
                 </a>
                 <a
                   href="https://twitter.com/intent/tweet?text=Food%20and%20Nutrition%20Trends&url=https://example.com/news-food-nutrition"
@@ -185,7 +185,7 @@ export default function ArticleDetailContent() {
                   rel="noreferrer"
                   className="btn btn-success"
                 >
-                  <i className="fa fa-twitter"></i>Twitter
+                  <i className="fa-brands fa-twitter"></i>Twitter
                 </a>
                 <a
                   href="https://plus.google.com/share?url=https://example.com/news-food-nutrition"
@@ -193,7 +193,7 @@ export default function ArticleDetailContent() {
                   rel="noreferrer"
                   className="btn btn-danger"
                 >
-                  <i className="fa fa-google-plus"></i>Google+
+                  <i className="fa-brands fa-google-plus"></i>Google+
                 </a>
               </div>
             </div>

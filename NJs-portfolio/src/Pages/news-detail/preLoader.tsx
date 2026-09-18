@@ -10,17 +10,14 @@ export default function Preloader() {
 
     return () => clearTimeout(timer);
   }, []);
-  return (
-    <>
-      {loading ? (
-        <section className="preloader">
-          <div className="spinner">
-            <span className="spinner-rotate"></span>
-          </div>
-        </section>
-      ) : (
-        <h1>Page Loaded!</h1>
-      )}
-    </>
-  );
+
+  if (loading) {
+    return (
+      <section className="preloader">
+        <div className="spinner">
+          <span className="spinner-rotate"></span>
+        </div>
+      </section>
+    );
+  }
 }

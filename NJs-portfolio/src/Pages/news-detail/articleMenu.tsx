@@ -19,7 +19,8 @@ export default function ArticleMenu() {
           {/* <!-- lOGO TEXT HERE --> */}
           <a href="/" className="navbar-brand">
             <i className="fa fa-stethoscope"></i>
-            <span className="brand-n">N</span>ana Adjoa Sarkwa
+            <span className="brand-n">N</span>
+            <span className="green-text">ana Adjoa Sarkwa</span>
           </a>
         </div>
 

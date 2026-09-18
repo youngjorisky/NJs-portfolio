@@ -50,24 +50,6 @@ export default function ArticleFooter() {
                   <span>2025</span>
                 </div>
               </div>
-
-              <div className="latest-stories">
-                <div className="stories-image">
-                  <a href="#">
-                    <img
-                      src="/images/news-image.jpg"
-                      className="img-responsive"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="stories-info">
-                  <a href="#">
-                    <h5>Nutrition and Public Health Research</h5>
-                  </a>
-                  <span>Research Support</span>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -92,21 +74,21 @@ export default function ArticleFooter() {
                 <li>
                   <a
                     href="https://web.facebook.com/NanaAdjoaSarkwa"
-                    className="fa fa-facebook-square"
+                    className="fa-brands fa-facebook-square"
                     title="facebook icon"
                   ></a>
                 </li>
                 <li>
                   <a
                     href="https://www.instagram.com/nanaadjoasarkwa?stkn=MW5rYnQ3Y2sxa21qbg=="
-                    className="fa fa-instagram"
+                    className="fa-brands fa-instagram"
                     title="instagram icon"
                   ></a>
                 </li>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/nana-adjoa-sarkwa/"
-                    className="fa fa-linkedin"
+                    className="fa-brands fa-linkedin"
                     title="linkedin icon"
                   ></a>
                 </li>
