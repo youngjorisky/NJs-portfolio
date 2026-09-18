@@ -37,15 +37,18 @@ export default function ArticleFooter() {
                 <div className="stories-image">
                   <a href="#">
                     <img
-                      src="/images/news-image.jpg"
+                      src="/images/postpatrum-image.jpeg"
                       className="img-responsive"
                       alt=""
                     />
                   </a>
                 </div>
                 <div className="stories-info">
-                  <a href="#">
-                    <h5>Postpartum Weight Management Experiences</h5>
+                  <a href="https://doi.org/10.1016/j.jneb.2025.03.008">
+                    <h5>
+                      Postpartum Weight Management Experiences of Ghanaian
+                      Women: A Qualitative Inquiry
+                    </h5>
                   </a>
                   <span>2025</span>
                 </div>
