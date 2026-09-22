@@ -15,9 +15,12 @@ const messageSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
-  subject: {
+  date: {
     type: String,
     trim: true,
+  },
+  department: {
+    type: String,
     trim: true,
   },
   message: {

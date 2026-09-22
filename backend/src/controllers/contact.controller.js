@@ -3,7 +3,7 @@ import Message from "../models/message.model.js";
 
 export const submitContactForm = async (req, res) => {
   try {
-    const { name, email, phone, subject, message } = req.body;
+    const { name, email, phone, data, department, message } = req.body;
 
     if (!name || !email || !message) {
       return res.status(400).json({
@@ -16,7 +16,8 @@ export const submitContactForm = async (req, res) => {
       name,
       email,
       phone,
-      subject,
+      date,
+      department,
       message,
     });
 
@@ -32,14 +33,14 @@ export const submitContactForm = async (req, res) => {
       from: `"Portfolio Contact Form" <${process.env.EMAIL_USER}>`,
       to: process.env.OWNER_EMAIL,
       replyTo: email,
-      subject: subject
-        ? `New inquiry: ${subject}`
-        : "New contact form submission",
+      subject: `New appointment request - ${department || "General"}`,
       html: `
-            <h3>New message from Portfolio website</h3>
+            <h3>New appointment request</h3>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Phone:</strong> ${phone || "N/A"}</p>
+            <p><strong>Preferred Date:</strong> ${date || "N/A"}</p>
+            <p><strong>Department:</strong> ${department || "N/A"}</p>
             <p><strong>Message:</strong></p>
             <p>${message}</p>
             `,
