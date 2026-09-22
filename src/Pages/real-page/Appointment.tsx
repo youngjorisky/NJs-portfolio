@@ -1,4 +1,59 @@
+import { useState } from "react";
+
 export default function Appointment() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    date: "",
+    department: "General Health",
+    phone: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState<{
+    loading: boolean;
+    success: string | null;
+    error: string | null;
+  }>({ loading: false, success: null, error: null });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus({ loading: true, success: null, error: null });
+
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      setStatus({ loading: false, success: "Appointment request sent!", error: null });
+      setFormData({
+        name: "",
+        email: "",
+        date: "",
+        department: "General Health",
+        phone: "",
+        message: "",
+      });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Something went wrong.";
+      setStatus({ loading: false, success: null, error: message });
+    }
+  };
+
   return (
     <section id="appointment" data-stellar-background-ratio="3">
       <div className="container">
@@ -18,7 +73,7 @@ export default function Appointment() {
 
           <div className="col-md-6 col-sm-6">
             {/* CONTACT FORM HERE */}
-            <form id="appointment-form" role="form" method="post" action="#">
+            <form id="appointment-form" role="form" onSubmit={handleSubmit}>
               {/* SECTION TITLE */}
               <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
@@ -32,6 +87,9 @@ export default function Appointment() {
                     id="name"
                     name="name"
                     placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
 
@@ -43,6 +101,9 @@ export default function Appointment() {
                     id="email"
                     name="email"
                     placeholder="Your Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
 
@@ -50,15 +111,23 @@ export default function Appointment() {
                   <label htmlFor="date">Select Date</label>
                   <input
                     type="date"
+                    id="date"
                     name="date"
-                    value=""
+                    value={formData.date}
+                    onChange={handleChange}
                     className="form-control"
                   />
                 </div>
 
                 <div className="col-md-6 col-sm-6">
-                  <label htmlFor="select">Select Department</label>
-                  <select className="form-control">
+                  <label htmlFor="department">Select Department</label>
+                  <select
+                    id="department"
+                    name="department"
+                    className="form-control"
+                    value={formData.department}
+                    onChange={handleChange}
+                  >
                     <option>General Health</option>
                     <option>Cardiology</option>
                     <option>Dental</option>
@@ -67,30 +136,47 @@ export default function Appointment() {
                 </div>
 
                 <div className="col-md-12 col-sm-12">
-                  <label htmlFor="telephone">Phone Number</label>
+                  <label htmlFor="phone">Phone Number</label>
                   <input
                     type="tel"
                     className="form-control"
                     id="phone"
                     name="phone"
                     placeholder="Phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
-                  <label htmlFor="Message">Additional Message</label>
+                  <label htmlFor="message">Additional Message</label>
                   <textarea
                     className="form-control"
                     rows={5}
                     id="message"
                     name="message"
                     placeholder="Message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                   ></textarea>
                   <button
                     type="submit"
                     className="form-control"
                     id="cf-submit"
                     name="submit"
+                    disabled={status.loading}
                   >
-                    Submit Button
+                    {status.loading ? "Sending..." : "Submit Button"}
                   </button>
+
+                  {status.success && (
+                    <p style={{ color: "green", marginTop: "10px" }}>
+                      {status.success}
+                    </p>
+                  )}
+                  {status.error && (
+                    <p style={{ color: "red", marginTop: "10px" }}>
+                      {status.error}
+                    </p>
+                  )}
                 </div>
               </div>
             </form>
