@@ -3,7 +3,7 @@ import Message from "../models/message.model.js";
 
 export const submitContactForm = async (req, res) => {
   try {
-    const { name, email, phone, data, department, message } = req.body;
+    const { name, email, phone, date, department, message } = req.body;
 
     if (!name || !email || !message) {
       return res.status(400).json({

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import  { useState, } from "react";
+import type { FormEvent, ChangeEvent} from "react";
 
 export default function Appointment() {
   const [formData, setFormData] = useState({
@@ -17,12 +18,12 @@ export default function Appointment() {
   }>({ loading: false, success: null, error: null });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setStatus({ loading: true, success: null, error: null });
 
@@ -164,7 +165,7 @@ export default function Appointment() {
                     name="submit"
                     disabled={status.loading}
                   >
-                    {status.loading ? "Sending..." : "Submit Button"}
+                    {status.loading ? "Sending..." : "MAKE APPOINTMENT"}
                   </button>
 
                   {status.success && (
