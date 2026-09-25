@@ -129,10 +129,10 @@ export default function Appointment() {
                     value={formData.department}
                     onChange={handleChange}
                   >
-                    <option>General Health</option>
-                    <option>Cardiology</option>
-                    <option>Dental</option>
-                    <option>Medical Research</option>
+                    <option>Research & Health Data</option>
+                    <option>Nutritional & public Health</option>
+                    <option>Community Health</option>
+                    <option>Administrative work</option>
                   </select>
                 </div>
 
