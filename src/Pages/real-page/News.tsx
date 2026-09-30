@@ -19,7 +19,7 @@ export default function News() {
                 <img
                   src="/images/news-image1.jpg"
                   className="img-responsive"
-                  alt=""
+                  alt="Fresh whole foods arranged on a table"
                 />
               </Link>
               <div className="news-info">
@@ -35,7 +35,7 @@ export default function News() {
                   <img
                     src="/images/profile-image.png"
                     className="img-responsive"
-                    alt=""
+                    alt="Nana Adjoa Sarkwa"
                   />
                   <div className="author-info">
                     <h5>Nana Adjoa Sarkwa</h5>
@@ -53,7 +53,7 @@ export default function News() {
                 <img
                   src="/images/news-image2.jpg"
                   className="img-responsive"
-                  alt=""
+                  alt="Ingredients for a personalized nutrition plan"
                 />
               </Link>
               <div className="news-info">
@@ -69,7 +69,7 @@ export default function News() {
                   <img
                     src="/images/profile-image.png"
                     className="img-responsive"
-                    alt=""
+                    alt="Nana Adjoa Sarkwa"
                   />
                   <div className="author-info">
                     <h5>Nana Adjoa Sarkwa</h5>
@@ -87,7 +87,7 @@ export default function News() {
                 <img
                   src="/images/news-image3.jpg"
                   className="img-responsive"
-                  alt=""
+                  alt="Seasonal local produce from a farmers market"
                 />
               </Link>
               <div className="news-info">
@@ -103,7 +103,7 @@ export default function News() {
                   <img
                     src="/images/profile-image.png"
                     className="img-responsive"
-                    alt=""
+                    alt="Nana Adjoa Sarkwa"
                   />
                   <div className="author-info">
                     <h5>Nana Adjoa Sarkwa</h5>

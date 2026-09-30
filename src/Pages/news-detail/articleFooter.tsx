@@ -39,7 +39,7 @@ export default function ArticleFooter() {
                     <img
                       src="/images/postpatrum-image.jpeg"
                       className="img-responsive"
-                      alt=""
+                      alt="Cover of the postpartum weight management research paper"
                     />
                   </a>
                 </div>

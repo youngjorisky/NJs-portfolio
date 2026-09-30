@@ -142,7 +142,7 @@ export default function ArticleDetailContent() {
               {visibleNews.map((story, index) => (
                 <article className="food-news-story" key={story.title}>
                   <div className="news-image">
-                    <img src={story.image} className="img-responsive" alt="" />
+                    <img src={story.image} className="img-responsive" alt={story.title} />
                   </div>
 
                   <div className="news-meta">

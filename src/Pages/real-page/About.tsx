@@ -36,7 +36,7 @@ export default function About() {
                 <img
                   src="/images/profile-image.png"
                   className="img-responsive"
-                  alt=""
+                  alt="Portrait of RD. Nana Adjoa Sarkwa"
                 />
                 <figcaption>
                   <h3>RD. Nana Adjoa Sarkwa</h3>

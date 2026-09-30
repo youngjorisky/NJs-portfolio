@@ -18,7 +18,7 @@ export default function Team() {
               <img
                 src="/images/public-health-picture.jpeg"
                 className="img-responsive"
-                alt=""
+                alt="Community nutrition outreach session"
               />
 
               <div className="team-info">
@@ -33,7 +33,7 @@ export default function Team() {
               <img
                 src="/images/research-picture.jpeg"
                 className="img-responsive"
-                alt=""
+                alt="Researcher analysing health data"
               />
 
               <div className="team-info">
@@ -48,7 +48,7 @@ export default function Team() {
               <img
                 src="/images/community-service-picture.jpeg"
                 className="img-responsive"
-                alt=""
+                alt="Volunteers at a community health event"
               />
 
               <div className="team-info">
