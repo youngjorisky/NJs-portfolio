@@ -1,3 +1,4 @@
+import BackToTop from "../components/BackToTop";
 import ArticleMenu from "./articleMenu";
 import ArticleFooter from "./articleFooter";
 import ArticleDetailContent from "./articleDetailContent";
@@ -12,6 +13,7 @@ export default function NewsDetail() {
       <ArticleMenu />
       <ArticleDetailContent />
       <ArticleFooter />
+      <BackToTop />
     </>
   );
 }

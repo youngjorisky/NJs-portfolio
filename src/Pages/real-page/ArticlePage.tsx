@@ -1,3 +1,4 @@
+import BackToTop from "../components/BackToTop";
 import Header from "./Header";
 import Menu from "./Menu";
 import Home from "./Home";
@@ -20,6 +21,7 @@ export default function ArticlePage() {
       <Appointment />
       <Map />
       <Footer />
+      <BackToTop />
     </>
   );
 }
